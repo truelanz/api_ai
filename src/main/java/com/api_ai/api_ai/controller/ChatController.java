@@ -9,6 +9,8 @@ class ChatController {
 
     private final ChatClient chatClient;
 
+    
+
     public ChatController(ChatClient.Builder chatClientBuilder) {
         this.chatClient = chatClientBuilder.build();
     }
@@ -20,4 +22,6 @@ class ChatController {
             .call()
             .content();
     }
+
+    
 }
